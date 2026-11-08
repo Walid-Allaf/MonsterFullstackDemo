@@ -14,7 +14,8 @@ export async function isAdmin() {
   return actual.length===expected.length && timingSafeEqual(actual,expected);
 }
 export function cookieOptions() {
-  return { httpOnly:true, sameSite:"strict" as const, secure:process.env.NODE_ENV==="production", path:"/", maxAge:hours*3600 };
+  // return { httpOnly:true, sameSite:"strict" as const, secure:process.env.NODE_ENV==="production", path:"/", maxAge:hours*3600 };
+  return { httpOnly:true, sameSite:"strict" as const, secure:false, path:"/", maxAge:hours*3600 };
 }
 export const cookieName=COOKIE;
 export function safePasswordMatch(candidate:string) {
