@@ -1,0 +1,24 @@
+{
+  "name": "monster-next-sqlserver-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "15.5.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/mssql": "^9.1.7"
+  }
+}
